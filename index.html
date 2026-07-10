@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -376,4 +377,384 @@ while modern developer platforms offer fast self-service access.
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Composio AI Product Ops Assignment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>AI Product Operations Research Case Study</h1>
+
+<p>
+
+Researched 100 SaaS applications to evaluate API readiness,
+authentication, self-serve onboarding, MCP support and
+AI agent buildability.
+
+</p>
+
+<a href="#tableBody" class="btn">
+
+View Research
+
+</a>
+
+</header>
+
+<section>
+
+<h2>Research Agent Workflow</h2>
+
+<div class="workflow">
+
+<div class="step">
+
+<h3>1</h3>
+
+<p>Read apps.json</p>
+
+</div>
+
+<div class="step">
+
+<h3>2</h3>
+
+<p>Research Official Documentation</p>
+
+</div>
+
+<div class="step">
+
+<h3>3</h3>
+
+<p>Generate research.json</p>
+
+</div>
+
+<div class="step">
+
+<h3>4</h3>
+
+<p>Create Insights</p>
+
+</div>
+
+<div class="step">
+
+<h3>5</h3>
+
+<p>Generate Dashboard</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Top Findings</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>OAuth 2.0</h3>
+
+<p>
+
+Most common authentication method.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>REST APIs</h3>
+
+<p>
+
+Dominant API style across platforms.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Self Serve</h3>
+
+<p>
+
+Most SaaS products provide developer onboarding.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Enterprise Apps</h3>
+
+<p>
+
+Often require approval or contact sales.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="workflow">
+
+    <h2>Workflow</h2>
+
+    <div class="flow">
+
+        <div>apps.json</div>
+
+        <span>→</span>
+
+        <div>research.js</div>
+
+        <span>→</span>
+
+        <div>research.json</div>
+
+        <span>→</span>
+
+        <div>analysis.js</div>
+
+        <span>→</span>
+
+        <div>Dashboard</div>
+
+    </div>
+
+</section>
+
+<section>
+
+<h2>Verification</h2>
+
+<div class="verify">
+
+<div>
+
+<h3>100</h3>
+
+<p>Apps Researched</p>
+
+</div>
+
+<div>
+
+<h3>10</h3>
+
+<p>Apps Cross Checked</p>
+
+</div>
+
+<div>
+
+<h3>95%</h3>
+
+<p>Estimated Accuracy</p>
+
+</div>
+
+<div>
+
+<h3>Official Docs</h3>
+
+<p>Primary Evidence Source</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+    <h2>Key Insights</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Total Apps</h3>
+
+            <h1 id="totalApps">0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Self Serve</h3>
+
+            <h1 id="selfServeApps">0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Buildable</h3>
+
+            <h1 id="buildableApps">0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>MCP Support</h3>
+
+            <h1 id="mcpApps">0</h1>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Research Summary</h2>
+
+    <div class="charts">
+
+        <canvas id="authChart"></canvas>
+
+        <canvas id="categoryChart"></canvas>
+
+        <canvas id="buildChart"></canvas>
+
+    </div>
+
+</section>
+
+<section>
+
+<h2>Patterns Found</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Authentication</h3>
+<p>OAuth 2.0 is the dominant authentication method across most SaaS platforms.</p>
+</div>
+
+<div class="card">
+<h3>API Surface</h3>
+<p>REST APIs are the most common, while GraphQL appears mainly in developer and productivity tools.</p>
+</div>
+
+<div class="card">
+<h3>Self-Serve</h3>
+<p>Most modern SaaS platforms allow developers to create credentials without contacting sales.</p>
+</div>
+
+<div class="card">
+<h3>Main Blocker</h3>
+<p>Enterprise products often require admin approval, paid plans, or enterprise contracts.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+    <h2>Applications</h2>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search application..."
+    >
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>App</th>
+
+                    <th>Category</th>
+
+                    <th>Auth</th>
+
+                    <th>Self Serve</th>
+
+                    <th>API</th>
+
+                    <th>Buildable</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+<section>
+
+<h2>Conclusion</h2>
+
+<p>
+
+Most SaaS products expose REST APIs with OAuth2 authentication,
+making them suitable for AI agent integrations.
+Enterprise products typically require additional onboarding,
+while modern developer platforms offer fast self-service access.
+
+</p>
+
+</section>
+
+<footer>
+
+    <p>
+        Built for Composio AI Product Ops Internship Assignment
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+>>>>>>> 1d00b65ece2c0b2e804fa539b3fa08899c8c7138
 </html>
