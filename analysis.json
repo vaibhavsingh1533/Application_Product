@@ -1,0 +1,60 @@
+{
+  "totalApps": 100,
+  "authMethods": {
+    "OAuth 2.0": 28,
+    "OAuth 2.0, Private App Token": 1,
+    "OAuth 2.0, API Token": 6,
+    "JWT, API Token": 1,
+    "API Key, OAuth 2.0": 2,
+    "API Key": 18,
+    "OAuth 2.0, Access Token": 4,
+    "API Token": 7,
+    "OAuth 2.0, Bot Token": 2,
+    "API Key, Account SID & Auth Token": 1,
+    "Bot Token": 1,
+    "API Key & Secret, JWT": 1,
+    "OAuth 2.0, API Key": 4,
+    "OAuth 2.0, Private API Key": 1,
+    "Consumer Key & Secret": 1,
+    "Bearer Token": 3,
+    "OAuth 2.0, AWS Signature V4": 1,
+    "Unknown": 1,
+    "Basic Authentication": 1,
+    "None": 2,
+    "OAuth 2.0, Personal Access Token": 4,
+    "API Key, JWT": 1,
+    "Basic Authentication, Bearer Token": 1,
+    "OAuth 2.0, Key Pair, JWT": 1,
+    "API Key, Application Key": 1,
+    "OAuth 2.0, Internal Integration Token": 1,
+    "API Token, OAuth 2.0": 1,
+    "Personal Access Token, OAuth 2.0": 1,
+    "Client ID & Secret": 1,
+    "API Key & Secret": 1,
+    "Google OAuth 2.0": 1
+  },
+  "categories": {
+    "CRM & Sales": 10,
+    "Support & Helpdesk": 10,
+    "Communications": 10,
+    "Marketing": 10,
+    "Ecommerce": 10,
+    "Data, SEO & Scraping": 10,
+    "Developer Tools": 10,
+    "Productivity": 10,
+    "Finance & Fintech": 10,
+    "AI & Research": 10
+  },
+  "selfServe": {
+    "Yes": 87,
+    "No": 13
+  },
+  "buildability": {
+    "Yes": 87,
+    "No": 0
+  },
+  "mcpSupport": {
+    "Yes": 7,
+    "No": 93
+  }
+}

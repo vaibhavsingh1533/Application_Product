@@ -1,0 +1,13 @@
+{
+  "name": "composio-assignment",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "research": "node research.js",
+    "analyze": "node analysis.js"
+  },
+  "dependencies": {
+    "axios": "^1.18.1",
+    "dotenv": "^16.4.7"
+  }
+}
