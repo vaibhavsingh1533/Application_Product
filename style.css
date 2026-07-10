@@ -397,33 +397,94 @@ header p{
    CHARTS
 ========================= */
 
+/* =========================
+   RESEARCH SUMMARY
+========================= */
+
 .charts{
+
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
-    gap:25px;
+
+    gap:30px;
+
+    margin-top:40px;
+
 }
 
 .chart-card{
-    background:#fff;
-    padding:20px;
+
+    background:#ffffff;
+
     border-radius:16px;
-    height:360px;
+
+    padding:25px;
+
+    height:420px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
     box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.chart-card h3{
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+    color:#1e3a8a;
+
 }
 
 .chart-card canvas{
+
     width:100% !important;
-    height:100% !important;
+
+    height:320px !important;
+
 }
 
-@media(max-width:900px){
+/* Laptop */
+
+@media (max-width:1200px){
 
     .charts{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:900px){
+
+    .charts{
+
         grid-template-columns:1fr;
+
     }
 
     .chart-card{
-        height:320px;
+
+        height:360px;
+
+    }
+
+    .chart-card canvas{
+
+        height:260px !important;
+
     }
 
 }
