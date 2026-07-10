@@ -115,30 +115,105 @@ function setupSearch(apps){
 function loadCharts(stats){
 
 // Auth Chart
+new Chart(document.getElementById("authChart"),{
+    type:"pie",
+    data:{
+        labels:Object.keys(stats.authMethods),
+        datasets:[{
+            data:Object.values(stats.authMethods),
+            backgroundColor:[
+                "#2563eb",
+                "#60a5fa",
+                "#93c5fd",
+                "#bfdbfe",
+                "#dbeafe"
+            ]
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        plugins:{
+            legend:{
+                position:"bottom"
+            }
+        }
+    }
+});
 
-new Chart(
+// Category Chart
+new Chart(document.getElementById("categoryChart"),{
+    type:"bar",
+    data:{
+        labels:Object.keys(stats.categories),
+        datasets:[{
+            label:"Apps",
+            data:Object.values(stats.categories),
+            backgroundColor:"#2563eb",
+            borderRadius:8
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        plugins:{
+            legend:{
+                display:false
+            }
+        }
+    }
+});
 
-document.getElementById("authChart"),
+// Buildability Chart
+new Chart(document.getElementById("buildChart"),{
+    type:"doughnut",
+    data:{
+        labels:Object.keys(stats.buildability),
+        datasets:[{
+            data:Object.values(stats.buildability),
+            backgroundColor:[
+                "#22c55e",
+                "#ef4444",
+                "#f59e0b"
+            ]
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        plugins:{
+            legend:{
+                position:"bottom"
+            }
+        }
+    }
+});
 
-{
-
-type:"pie",
-
-data:{
-
-labels:Object.keys(stats.authMethods),
-
-datasets:[{
-
-data:Object.values(stats.authMethods)
-
-}]
+// Self Serve Chart
+new Chart(document.getElementById("selfServeChart"),{
+    type:"doughnut",
+    data:{
+        labels:Object.keys(stats.selfServe),
+        datasets:[{
+            data:Object.values(stats.selfServe),
+            backgroundColor:[
+                "#3b82f6",
+                "#f97316"
+            ]
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        plugins:{
+            legend:{
+                position:"bottom"
+            }
+        }
+    }
+});
 
 }
-
-}
-
-);
 
 // Category
 
